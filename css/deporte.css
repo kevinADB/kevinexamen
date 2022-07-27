@@ -1,0 +1,1217 @@
+/*PARA IMAGENES EN MOVIMIENTO*/
+.slider{
+	width: 95%;
+	margin: auto;
+	/*para que los elementos no se vean*/
+	overflow: hidden;
+}
+.slider ul{
+	padding: 0;
+	display: flex;
+	width: 400%;
+/*pára animacion*/
+	animation: cambio 20s infinite alternate;
+	
+}
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+.slider img{
+	width: 100%;
+}
+
+@keyframes cambio{
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+
+
+
+}
+
+
+
+
+
+
+/*PARA El INDEX*/
+#contenedor{
+	width: 1004px;
+	height: 100px;
+	margin: auto;
+	background-color:#FFFFFF:
+	filter: saturate(180%)
+margin-top: 0px;
+}
+
+
+
+ ul, ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline;
+	margin-top: 0px;
+}
+
+header{
+	height: 60px;
+	background-color: #c0c0c0;
+	padding-left: 100px;
+	padding-top: 10px; 
+	background: #790303;
+}
+header ul #inicio li{
+	display: inline;
+	float: right;
+	
+}
+ #inicio li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	padding-left: 0px;
+	font-family: palatino,"Century Schoolbook L", "Times new roman", "serif";
+font-size: 40px;
+background: #790303;
+}
+.clear{
+	clear:both;
+}
+/*cambiar el FONDO O ENCUADRAR EL CAMPO */
+div{
+	background-color: #fff;
+	margin: 250px;
+	margin-top: 0px;
+}
+
+article ul p{
+	text-indent: 60px;
+
+}
+aside{
+	width: 352px;
+	height: 250px;
+	margin-left: 652px;
+	margin-bottom: 1px;
+	color: #000;
+	text-align: center;
+
+}
+
+footer{
+	background-color:#B9ACAD;
+	height: 80px;
+	margin-top:40px; 
+}
+hr{
+	padding-top:20px; 
+	color: #8E8E8E;
+}
+h6{
+	text-align: center;
+	margin-top: 15px;
+	color: #575757;
+}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+
+}
+figure h1{
+	background: #DC6600;
+	margin-top: 0px;
+	color: #ffffff;
+	text-indent: 20px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times new roman";
+}
+
+
+
+
+/*PARA EL BOTON SUPERIOR*/
+
+
+.btn-neon11{
+	position: relative;
+	display: inline-block;
+	padding: 5px 112px; /*relleno*/
+	color: #000000;
+	letter-spacing: 4px;
+	font-size: 28px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+	background: #F6B5B5;
+}
+	
+  
+/*BOTON*/
+.btn-neon{
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px; /*relleno*/
+	color: #B3C30C;
+	letter-spacing: 4px;
+	font-size: 15px;
+	text-decoration: none;
+	overflow: hidden;transition: 0.2s;
+
+}
+.btn-neon:hover{
+	background: #a945c7;
+	box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+	transition-delay: 0.3s; /*DURACION EN SALIR LA LUZ*/
+
+}
+.btn-neon span{
+	position: absolute;
+	display: block;
+}
+#span1{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span1{
+	left: 100%;
+	transition: 1s;
+
+}
+#span3{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span3{
+	right:  100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+
+}
+
+#span2{
+	top: 100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span2{
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+
+}
+#span4{
+	bottom:  0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span4{
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+
+}
+
+
+/*PARA EL FORMULARIO*/
+form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 500px;
+  height: 400px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+
+input, 
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+
+  /* Tamaño uniforme del campo de texto */
+  width: 500px;
+  box-sizing: border-box;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+
+input:focus, 
+textarea:focus {
+  /* Destacado adicional para elementos que tienen el cursor */
+  border-color: #000;
+}
+
+textarea {
+  /* Alinear los campos de texto multilínea con sus etiquetas */
+  vertical-align: top;
+
+  /* Proporcionar espacio para escribir texto */
+  height: 5em;
+}
+
+
+
+button {
+  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+     entre las etiquetas y sus campos de texto */
+  margin-left: .5em;
+}
+/*PARA IMAGENES EN MOVIMIENTO*/
+.slider{
+	width: 95%;
+	margin: auto;
+	/*para que los elementos no se vean*/
+	overflow: hidden;
+}
+.slider ul{
+	padding: 0;
+	display: flex;
+	width: 400%;
+/*pára animacion*/
+	animation: cambio 20s infinite alternate;
+	
+}
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+.slider img{
+	width: 100%;
+}
+
+@keyframes cambio{
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+
+
+
+}
+
+
+
+
+
+
+/*PARA El INDEX*/
+#contenedor{
+	width: 1034px;
+	height: 1073px;
+	margin: auto;
+	background-color:#FFFFFF:
+	filter: saturate(180%)
+
+}
+
+
+
+ ul, ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline;
+	margin-top: 0px;
+}
+
+header{
+	height: 60px;
+	background-color: #c0c0c0;
+	padding-left: 100px;
+	padding-top: 10px; 
+	background: #790303;
+}
+header ul #inicio li{
+	display: inline;
+	float: right;
+	
+}
+ #inicio li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	padding-left: 0px;
+	font-family: palatino,"Century Schoolbook L", "Times new roman", "serif";
+font-size: 40px;
+background: #790303;
+}
+.clear{
+	clear:both;
+}
+div{
+	background-color: #fff;
+	margin: 0px;
+}
+/* ESTE ES PARA EL INICIO*/
+#inicio2 li a{
+	color:#DC6600;
+	margin: auto;
+	padding-top: 10px;
+	padding-right: 500px;
+	text-decoration: none;
+
+}
+article {
+	width: 652px;
+	height: 250px;
+	float: left;
+	background-color:#F45BB7;
+	color: #fff;
+	font-size: 15px;
+
+
+	 }
+article h1{
+	color: #fff;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times new roman";
+	padding-left: 20px;
+	
+
+
+}
+p{
+	font-family: times new roman;
+	transition: font-size 300ms linear 0s;/* PARA HACER ZOOM MOVIMIENTO*/
+
+}
+article ul p{
+	text-indent: 10px;
+
+}
+aside{
+	width: 352px;
+	height: 250px;
+	margin-left: 652px;
+	margin-bottom: 1px;
+	color: #000;
+	text-align: center;
+
+}
+
+aside div#celeste, aside div#verde, aside div#naranja, aside div#rosa{
+	height: 270px;
+	padding-top: 3.5px;
+	margin-left: 5px;
+	margin-bottom: 4px;
+	color: #000;
+	text-align: center;
+	background: #F3ED4C;
+	
+}
+
+element {
+  --main-bg-color: brown;
+}
+
+element {
+  background-color: var(--main-bg-color);
+}
+#celeste{
+	background-color: #28B0C0;
+	transition: all 2s ease-in-out; 
+}
+#verde{
+	background-color: #53B54F; 
+}
+#naranja{
+	background-color: #C8962A; 
+	transition: all 2s ease-in-out;
+}
+#rosa{
+	background-color: #E045D1; 
+}
+/*PARA EL TAMAÑO DEL CUADRO*/
+#img1, #img2, #img3,#img4, #img5, #img6{
+	width: 300px;
+	height: 650px;
+	background-color:#fff;
+	border: solid 0px #57ECE2; /*SI PONGO AQUI SALE BORDES DEL MARCO DEBERIA IR 10*/
+	margin-right:  0px;
+/*para el borde DEGRADADO*/
+    
+    
+    outline: 10px dashed #ffffff;
+    box-shadow: 10px 0px 10px 10px #97F37E;
+
+}
+#img2{
+
+	outline: 10px dashed #ffffff;
+    box-shadow: 10px 0px 10px 10px #F21C1C;
+
+
+}
+#img3{
+
+	outline: 10px dashed #ffffff;
+    box-shadow: 10px 0px 10px 10px #7EA9F3;
+}
+#img4{
+
+	outline: 10px dashed #ffffff;
+    box-shadow: 10px 0px 10px 10px #909094;
+}
+#img5{
+
+	outline: 10px dashed #ffffff;
+    box-shadow: 10px 0px 10px 10px #399A3F;
+}
+#img6{
+
+	outline: 10px dashed #ffffff;
+    box-shadow: 10px 0px 10px 10px #ED6CE3;
+}
+
+
+
+
+
+
+
+
+
+#img1 img, #img2 img, #img3 img,#img4 img, #img5 img, #img6 img{
+margin-left: 10px; /*PARA EL MARGEN*/
+width:250px; /*PARA EL ANCHO*/
+height: 300px;} /*PARA EL ALTURA*/
+#img1{
+ float:left;
+ margin-top: 110px;
+}
+#img2{
+	  margin-left: 365px;
+ margin-top: 110px;
+ 	 position: absolute;
+}
+#img3{
+	margin-left: 720.5px;
+	margin-top: 110px;
+}
+#img4{
+	float: left;
+	margin-top: 20px; /*PARA PONER AL TOPE*/
+
+}
+#img5{
+	margin-left: 365px;
+	position: absolute;
+	margin-top: 20px;
+}
+#img6{
+	margin-left: 720.5px;
+	margin-top: 36px;
+}
+#img1 figcaption,#img2 figcaption,#img3 figcaption,#img4 figcaption,#img5 figcaption,#img6 figcaption{
+	/*PARA LOS TEXTOS*/
+	margin:10px;
+	text-align: justify;
+	font-size: 16px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times new roman";
+	color: #0D0111;
+}
+footer{
+	background-color:#B9ACAD;
+	height: 80px;
+	margin-top:40px; 
+}
+hr{
+	padding-top:20px; 
+	color: #8E8E8E;
+}
+h6{
+	text-align: center;
+	margin-top: 15px;
+	color: #575757;
+}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+
+}
+figure h1{
+	background: #DC6600;
+	margin-top: 0px;
+	color: #ffffff;
+	text-indent: 20px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times new roman";
+}
+
+
+
+
+/*PARA EL BOTON SUPERIOR*/
+
+.btn-neon00{
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px; /*relleno*/
+	color: #000000;
+	letter-spacing: 4px;
+	font-size: 28px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+	background: #9BF597;
+}
+.btn-neon11{
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px; /*relleno*/
+	color: #000000;
+	letter-spacing: 4px;
+	font-size: 28px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+	background: #F6B5B5;
+}
+.btn-neon22{
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px; /*relleno*/
+	color: #000000;
+	letter-spacing: 4px;
+	font-size: 28px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+	background: #8B9BF8;
+}
+
+.btn-neon33{
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px; /*relleno*/
+	color: #FFFFFF;
+	letter-spacing: 4px;
+	font-size: 28px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+	background: #869493;
+}
+
+.btn-neon44{
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px; /*relleno*/
+	color: #FFFFFF;
+	letter-spacing: 4px;
+	font-size: 28px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+	background: #AFCF51;
+}
+.btn-neon55{
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px; /*relleno*/
+	color: #FFFFFF;
+	letter-spacing: 4px;
+	font-size: 28px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+	background: #EB96EC;
+}	
+  
+/*BOTON*/
+.btn-neon{
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px; /*relleno*/
+	color: #B3C30C;
+	letter-spacing: 4px;
+	font-size: 28px;
+	text-decoration: none;
+	overflow: hidden;transition: 0.2s;
+
+}
+.btn-neon:hover{
+	background: #a945c7;
+	box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+	transition-delay: 0.3s; /*DURACION EN SALIR LA LUZ*/
+
+}
+.btn-neon span{
+	position: absolute;
+	display: block;
+}
+#span1{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span1{
+	left: 100%;
+	transition: 1s;
+
+}
+#span3{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span3{
+	right:  100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+
+}
+
+#span2{
+	top: 100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span2{
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+
+}
+#span4{
+	bottom:  0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span4{
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+
+}
+
+/*PARA POLOS*/
+.btn-neon1{
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px; /*relleno*/
+	color: #A10C0C;
+	letter-spacing: 4px;
+	font-size: 28px;
+	text-decoration: none;
+	overflow: hidden;transition: 0.2s;
+
+}
+.btn-neon1:hover{
+	background: #6A6CCB;
+	box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+	transition-delay: 0.3s; /*DURACION EN SALIR LA LUZ*/
+
+}
+.btn-neon1 span{
+	position: absolute;
+	display: block;
+}
+#span1{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#a945c7);
+
+}
+.btn-neon1:hover #span1{
+	left: 100%;
+	transition: 1s;
+
+}
+#span3{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#a945c7);
+
+}
+.btn-neon1:hover #span3{
+	right:  100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+
+}
+
+#span2{
+	top: 100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#a945c7);
+
+}
+.btn-neon1:hover #span2{
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+
+}
+#span4{
+	bottom:  0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#a945c7);
+
+}
+.btn-neon1:hover #span4{
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+
+}
+
+/*para BUZOS*/
+.btn-neon2{
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px; /*relleno*/
+	color: #08249A;
+	letter-spacing: 4px;
+	font-size: 28px;
+	text-decoration: none;
+	overflow: hidden;transition: 0.2s;
+
+}
+.btn-neon2:hover{
+	background: #B2B3BA;
+	box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+	transition-delay: 0.3s; /*DURACION EN SALIR LA LUZ*/
+
+}
+.btn-neon2 span{
+	position: absolute;
+	display: block;
+}
+#span1{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#a945c7);
+
+}
+.btn-neon2:hover #span1{
+	left: 100%;
+	transition: 1s;
+
+}
+#span3{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#a945c7);
+
+}
+.btn-neon2:hover #span3{
+	right:  100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+
+}
+
+#span2{
+	top: 100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#a945c7);
+
+}
+.btn-neon2:hover #span2{
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+
+}
+#span4{
+	bottom:  0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#a945c7);
+
+}
+.btn-neon2:hover #span4{
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+
+}
+
+/*PARA SHORT*/
+.btn-neon3{
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px; /*relleno*/
+	color: #020204;
+	letter-spacing: 4px;
+	font-size: 28px;
+	text-decoration: none;
+	overflow: hidden;transition: 0.2s;
+
+}
+.btn-neon3:hover{
+	background: #a945c7;
+	box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+	transition-delay: 0.3s; /*DURACION EN SALIR LA LUZ*/
+
+}
+.btn-neon3 span{
+	position: absolute;
+	display: block;
+}
+#span1{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#a945c7);
+
+}
+.btn-neon3:hover #span1{
+	left: 100%;
+	transition: 1s;
+
+}
+#span3{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#a945c7);
+
+}
+.btn-neon3:hover #span3{
+	right:  100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+
+}
+
+#span2{
+	top: 100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#a945c7);
+
+}
+.btn-neon3:hover #span2{
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+
+}
+#span4{
+	bottom:  0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#a945c7);
+
+}
+.btn-neon3:hover #span4{
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+
+}
+/*CASACAS*/
+.btn-neon4{
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px; /*relleno*/
+	color: #067D09;
+	letter-spacing: 4px;
+	font-size: 28px;
+	text-decoration: none;
+	overflow: hidden;transition: 0.2s;
+
+}
+.btn-neon4:hover{
+	background: #DEF0EB;
+	box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+	transition-delay: 0.3s; /*DURACION EN SALIR LA LUZ*/
+
+}
+.btn-neon4 span{
+	position: absolute;
+	display: block;
+}
+#span1{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#a945c7);
+
+}
+.btn-neon4:hover #span1{
+	left: 100%;
+	transition: 1s;
+
+}
+#span3{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#a945c7);
+
+}
+.btn-neon4:hover #span3{
+	right:  100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+
+}
+
+#span2{
+	top: 100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#a945c7);
+
+}
+.btn-neon4:hover #span2{
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+
+}
+#span4{
+	bottom:  0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#a945c7);
+
+}
+.btn-neon4:hover #span4{
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+
+}
+
+/*OTROS*/
+.btn-neon5{
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px; /*relleno*/
+	color: #D9840B;
+	letter-spacing: 4px;
+	font-size: 28px;
+	text-decoration: none;
+	overflow: hidden;transition: 0.2s;
+
+}
+.btn-neon5:hover{
+	background: #EB96EC;
+	box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+	transition-delay: 0.3s; /*DURACION EN SALIR LA LUZ*/
+
+}
+.btn-neon5 span{
+	position: absolute;
+	display: block;
+}
+#span1{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#a945c7);
+
+}
+.btn-neon5:hover #span1{
+	left: 100%;
+	transition: 1s;
+
+}
+#span3{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#a945c7);
+
+}
+.btn-neon5:hover #span3{
+	right:  100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+
+}
+
+#span2{
+	top: 100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#a945c7);
+
+}
+.btn-neon5:hover #span2{
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+
+}
+#span4{
+	bottom:  0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#a945c7);
+
+}
+.btn-neon5:hover #span4{
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+
+}
+
+
+
+
+
+
+/*PARA EL FORMULARIO*/
+form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+
+input, 
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+
+  /* Tamaño uniforme del campo de texto */
+  width: 500px;
+  box-sizing: border-box;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+
+input:focus, 
+textarea:focus {
+  /* Destacado adicional para elementos que tienen el cursor */
+  border-color: #000;
+}
+
+textarea {
+  /* Alinear los campos de texto multilínea con sus etiquetas */
+  vertical-align: top;
+
+  /* Proporcionar espacio para escribir texto */
+  height: 5em;
+}
+
+.button {
+  /* Alinear los botones con los campos de texto */
+  padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+}
+
+button {
+  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+     entre las etiquetas y sus campos de texto */
+  margin-left: .5em;
+}
+
+
